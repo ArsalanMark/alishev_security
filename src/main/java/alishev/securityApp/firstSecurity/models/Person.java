@@ -15,11 +15,11 @@ public class Person {
     private int id;
 
     @NotEmpty(message = "name don't must bee empty")
-    @Size(min=2, max=100, message = "name must bee longer then 2 symbols and smaller then 100 symbols")
+    @Size(min=2, max=100, message = "name must bee greater than 2 symbols and smaller than 100 symbols")
     @Column(name="username")
     private String username;
 
-    @Min(value = 1900, message = "birthyear must bee bigger then 1900")
+    @Min(value = 1900, message = "birthyear must bee bigger than 1900")
     @Column(name="year_of_birth")
     private int yearOfBirth;
 
